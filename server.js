@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 8000;
 
-const server = app.listen(port || process.env.PORT, function() {
+const server = app.listen(process.env.PORT || port, function() {
 	console.log("Listening on port 8000");
 })
 
